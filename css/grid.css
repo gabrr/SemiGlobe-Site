@@ -1,0 +1,19 @@
+@media only screen and (min-width: 768px) {
+    #highlights, #highlights2 {
+        width: 60%;
+        margin-left: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    footer{
+        padding: 0 20%;
+        background-color: #000;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #credits{
+        width: 150%;
+    }
+    
+}

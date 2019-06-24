@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    background-color: #e0e0e0;
+}
+
+#chart{
+    min-width: 350px;
+    max-width: 67%; 
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+#chart .inner-chart{
+    margin: 80px 0 0 5%;
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+}
+
+#chart .chart-size-limit{
+    height: 58%;
+    width: 84%;
+    left: 10%;
+    bottom: 15%;
+    position: absolute;
+}
+
+.chart-size-limit .left-vertical-line{
+    height: 100%;
+    width: .4%;
+    background-color: #000;
+    position: relative;
+}
+
+/********  VERTICAL LINE *********/
+.left-vertical-line .vertical-point{
+    width: 8px;
+    height: .4%;
+    background-color: #000;
+    position: absolute;
+    left: 100%;
+}
+.left-vertical-line .vertical-point:nth-child(1){
+    top: 0;
+}
+.left-vertical-line .vertical-point:nth-child(2){
+    top: 49%;
+}
+.left-vertical-line .vertical-point:nth-child(3){
+    top: 90%;
+}
+/*******  percentage of the lines  *****/
+.left-vertical-line .vertical-point .percentage{
+    position: absolute;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 10px;
+}
+
+
+
+
+/*******  BOTTOM LINE   ******/
+.chart-size-limit .bottom-horizontal-line{
+    width: 100%;
+    height: .6%;
+    background-color: #000;
+}
+
+
+/****** BARS AS GROUP *******/
+.chart-size-limit .outer-chart-bar{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.chart-size-limit .chart-bar{
+    width: 50%;
+    margin-left: 40%;
+    height: 100%;
+    border-radius: 1.5px;
+    background-color: #76BFD6;
+    position: relative;
+}
+
+/*****   BARS AS ONE      ******/
+.chart-size-limit .chart-bar .percentage{
+    position: absolute;
+    top: -25px;
+    font-size: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.chart-size-limit .chart-bar .uf{
+    position: absolute;
+    bottom: -25px;
+    font-size: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/****  HEADER OF THE CHART  ****/
+#chart h1{
+    padding: 5% 0 0 10%;
+    font-size: 120%;
+}
+
+
+
+/*****   GOAL-CARD    ******/
+.goal-card{
+    width: 20%;
+    height: 80px;
+    margin: 86px 0 0 10%;
+    background-color: #6BE058;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-radius: 10px;
+    box-shadow: 0px 1px 40px -2px rgba(0, 199, 0, 1);
+}
+.average-card{
+    width: 20%;
+    height: 80px;
+    margin: 20px 0 0 10%;
+    background-color: #F86B6B;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 28px -4px rgba(200, 0, 0, 1);
+}
