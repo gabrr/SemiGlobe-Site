@@ -561,6 +561,53 @@ nav{
     margin: 80px 0 0 10%;
     padding: 0;
 }
+#products #cables img{
+    width: 80%;
+    margin: 5px 0 0 10%;
+}
+
+
+
+/*******  BUTTON TO SHOW THE PRODUCT CONTENT ******/
+.product{
+    position: relative;
+}
+
+.expand-button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: -12px 8% 0 0;
+    background-color: #a5bbf7;
+    padding: 19px 2px 1px 19px;
+    display: inline-block;
+    border-radius: 20px;
+}
+.less-sign{
+    width: 19px;
+    height: 2px;
+    background-color: #fff;
+    transition: .4s;
+    transform:  translateX(-9px);
+}
+.plus-sign{
+    width: 2px;
+    height: 19px;
+    background-color: #fff;
+    transform: translateY(-10px);
+    transition: 500ms;
+    opacity: 1;
+}
+.lesser-sign{
+    transform: translateY(-10px) rotate(90deg);
+    opacity: 0;
+}
+
+/* THE PRODUCT CONTENT */
+.product-content{
+    display: none;
+}
+
 
 
 

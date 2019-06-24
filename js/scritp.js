@@ -280,7 +280,12 @@ $(document).ready( function() {
 
 
 
-
+/***   BUTTON TO EXPAND THE CONTENT OF THE CABLES  ****/
+function expandMenu(x) {
+    $(x).siblings(".product-content").fadeToggle(500);
+    var lesserButton = $(x).children(1)[1];
+    $(lesserButton).toggleClass("lesser-sign");
+}
 
 
 
