@@ -499,8 +499,9 @@ nav{
 }
 
 #products .product h2{
-    font-size: 17px;
+    font-size: 15px;
     margin: 50px 0 0 10%;
+    font-weight: lighter;
 }
 #products .product p{
     width: 80%;
@@ -577,9 +578,9 @@ nav{
     position: absolute;
     right: 0;
     top: 0;
-    margin: -12px 8% 0 0;
-    background-color: #a5bbf7;
-    padding: 19px 2px 1px 19px;
+    margin: -9px 8% 0 0;
+    background-color: #b2c7ff;
+    padding: 17px 1px 0px 18px;
     display: inline-block;
     border-radius: 20px;
 }
