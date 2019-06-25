@@ -43,7 +43,6 @@ nav{
     transition: .4s;
     background-color: #fff;
     z-index: 2;
-    overflow-y: scroll;
 }
 .nav-slide-left{
     left: 0;

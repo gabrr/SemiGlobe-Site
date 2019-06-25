@@ -250,7 +250,7 @@ p{
     #solutions header h2{
         font-size: 14px;
         margin-left: 20%;
-        margin-top: 10%;
+        margin-top: 30px;;
         padding-top: 50px;
         margin-bottom: 5px;
     }
@@ -507,6 +507,77 @@ p{
         top: 25%;
         background-color: #f7f7f7;
     }
+    
+    
+    
+    /*********  PRODUCTS   ************/
+    #devices{
+        padding-top: 100px;
+    }
+    #devices header h1{
+        padding: 50px 0 0 0;
+        margin-left: 20%;
+        box-shadow: none;
+    }
+    .product{
+        width: 60%;
+        margin-left: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #devices .product img{
+        width: 85%;
+        margin: 116px 0 0 18%;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    #devices .device1{
+        grid-column-start: 1;
+        grid-row: 1;
+        margin-top: 100px
+    }
+    
+    #products .product p, #products .product h2, #products .mail-button, #products .prod-details-nav ul, #products .product-info-box .hardware-info, #products .product-info-box .features-info{
+        margin-left: 0;
+    }
+    
+    
+    /**** cables  *******/
+    #cables header h1:nth-child(1){
+        margin-left: 20%;
+    }
+    #cables #cables2 h1{
+        margin-left: 0;
+    }
+    #cables .product{
+        display: block;
+    }
+    
+    #cables .product .cable-content-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+   #products #cables img{
+        width: 60%;
+        margin: -50px 0 0 0;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    
+    .cable-item01{
+        margin-top: 20px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    
+    products .prod-details-nav ul{
+        margin: 0 0 0 0;
+    }
+    
+    
+    
+    
     
     /***  ABOUT ***/
     #about{
