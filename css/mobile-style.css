@@ -535,6 +535,8 @@ nav{
 #products #featureButton{
     color: #7A8FC7;
 }
+
+
 #pproducts .product-info-box{
     width: 100%;
     min-height: 280px;
@@ -547,7 +549,13 @@ nav{
     color: #777;
     box-shadow: 0 10px 10px -10px #e0e0e0;
     padding-bottom: 75px;
+    list-style: none;
 }
+
+#products .product-info-box .features-info li{
+    margin: 10px 0 0 0;
+}
+
 #devices .product-info-box .hardware-info{
     display: none;
 }
@@ -612,8 +620,6 @@ nav{
 
 
 
-
-
 /** ABOUT SEMIGLOBE **/
 
 #about {
@@ -656,15 +662,15 @@ nav{
 
 #contact p{
     margin: 30px 0 0 10%;
-    color: #333;
+    color: #888;
 }
 #contact a{
     display: block;
     margin-left: 5%;
     padding: 2px 5%;
-    font-size: 19px;
-    color: #888;
-    font-family: serif;
+    font-size: 17px;
+    color: #fff;
+    font-family: 'ABeeZee', sans-serif;
     text-decoration: none;
 }
 
