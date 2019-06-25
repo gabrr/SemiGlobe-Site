@@ -95,12 +95,18 @@ $(document).ready( function() {
 /*********  VERTICAL MENU  *********/
 $(document).ready( function() {
     $(document).scroll( function() {
-        var triggleTop = $(document).scrollTop();
-        var solutionsTop = document.getElementById("solutions").offsetTop;
-        if (solutionsTop < triggleTop+150 && WidthWindow > 768) {
-            $("#vertical-navigation").fadeIn(800);
-        } else {
-            $("#vertical-navigation").fadeOut(200);
+        if(WidthWindow > 768) { 
+            var triggleTop = $(document).scrollTop();
+            var solutionsTop = document.getElementById("solutions").offsetTop;
+            if (solutionsTop < triggleTop+150 && WidthWindow > 768) {
+                $("#vertical-navigation").fadeIn(800);
+                $(".logo").css("position", "fixed");
+                $(".logo img").css("width", "150px");
+            } else {
+                $("#vertical-navigation").fadeOut(200);
+                $(".logo").css("position", "absolute");
+                $(".logo img").css("width", "230px");
+            }
         }
     });
 });

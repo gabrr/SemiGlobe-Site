@@ -509,9 +509,12 @@ p{
     }
     
     /***  ABOUT ***/
+    #about{
+        padding-top: 0;
+    }
     #about img{
-        margin: 80px 40% 50px;
-        width: 20%;
+        margin: 70px 42.5% 50px;
+        width: 15%;
     }
 
     #about h1{

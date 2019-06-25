@@ -429,7 +429,7 @@ nav{
     width: 69%;
     height: 80px;
     margin: 10px 0 0 23%;
-    background-color: #6BE058;
+    background-color: #3daf2a;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
@@ -488,7 +488,7 @@ nav{
     margin-left: 8%;
     padding-bottom: 18px;
     padding-left: 12px;
-    font-size: 170%;
+    font-size: 130%;
     width: 80%;
     box-shadow: 0 8px 16px -11px #999;
 }
@@ -532,7 +532,7 @@ nav{
     color: #666;
     cursor: pointer
 }
-#products #featureButton{
+#products #hardwareButton{
     color: #7A8FC7;
 }
 
@@ -556,7 +556,7 @@ nav{
     margin: 10px 0 0 0;
 }
 
-#devices .product-info-box .hardware-info{
+#devices .product-info-box .features-info{
     display: none;
 }
 
@@ -625,7 +625,7 @@ nav{
 #about {
     width: 100%;
     margin-top: 80px;
-    padding: 120px 0;
+    padding: 70px 0;
     background-color: #000;
 }
 
