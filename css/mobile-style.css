@@ -22,7 +22,7 @@ nav{
 
 .navbar-links{
     width: 100%;
-    height: 100%;
+    height: 120%;
     margin: 0;
     left: -100%; 
     position: fixed;
@@ -31,6 +31,7 @@ nav{
     transition: .4s;
     background-color: #fff;
     z-index: 2;
+    overflow-y: scroll;
 }
 .nav-slide-left{
     left: 0;
