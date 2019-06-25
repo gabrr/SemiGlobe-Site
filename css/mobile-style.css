@@ -429,13 +429,13 @@ nav{
     width: 69%;
     height: 80px;
     margin: 10px 0 0 23%;
-    background-color: #70c761;
+    background-color: #57d841;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
     border-radius: 10px;
-    box-shadow: 0px 1px 10px -1px rgba(0, 199, 0, 1);
+    box-shadow: 0px 1px 10px -1px rgb(6, 175, 6);
 }
 #chart .goal-card h1{
     font-size: 13px;
