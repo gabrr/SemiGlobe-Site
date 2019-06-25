@@ -162,12 +162,12 @@ nav{
 /*Content OF PRODUCTS*/
 #solutions{
     width: 100%;
+    margin-top: 40px
 }
 
 #solutions header h2{
     font-size: 14px;
     margin-left: 10%;
-    margin-top: 10%;
     padding-top: 50px;
     margin-bottom: 5px;
 }
@@ -186,7 +186,7 @@ nav{
 #phoenix-one{
     width: 90%;
     height: auto;
-    margin-top: 5px;
+    padding-top: 20px;
     position: relative;
 }
 #phoenix-one h1{
@@ -483,12 +483,11 @@ nav{
 /**************    THE PRODUCTS, DEVICES AND CABLES      ***************/
 #products{
     width: 100%;
-    margin: 200px auto;
+    margin: 100px auto;
 }
 #products header h1 {
     margin-left: 8%;
-    padding-bottom: 18px;
-    padding-left: 12px;
+    padding: 50px 0 18px 12px;
     font-size: 130%;
     width: 80%;
     box-shadow: 0 8px 16px -11px #999;
@@ -568,8 +567,8 @@ nav{
 /*************  CABLES STYLES  ************/
 #cables header h1 {
     box-shadow: none;
-    margin: 80px 0 0 10%;
-    padding: 0;
+    margin: 0px 0 0 10%;
+    padding: 60px 0 0 0;
 }
 #products #cables img{
     width: 80%;

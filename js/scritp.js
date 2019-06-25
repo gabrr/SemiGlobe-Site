@@ -287,6 +287,11 @@ $(document).ready( function() {
 
 
 /***   BUTTON TO EXPAND THE CONTENT OF THE CABLES  ****/
+$(document).ready( function() {
+    $(".product-content").siblings(".show-content").fadeIn();
+       
+});
+
 function expandMenu(x) {
     $(x).siblings(".product-content").fadeToggle(500);
     var lesserButton = $(x).children(1)[1];
