@@ -28,7 +28,7 @@ h1, h2{
     line-height: 25px;
 }
 p{
-    font-family: 'ABeeZee', sans-serif;
+    font-family: 'ABeeZee', sans-serif;  
     font-weight: lighter;
     word-spacing: 1.4px;
     line-height: 18.5px;
@@ -595,8 +595,8 @@ p{
     #about p{
         width: 60%;
         margin-left: 20%;
-        color: #999;
         font-size: 80%;
+        font-family: 'ABeeZee', sans-serif;
     }
     
     
@@ -659,6 +659,7 @@ p{
     #credits{
         width: 90%;
         margin-left: 0;
+        font-family: 'ABeeZee', sans-serif;
     }
 }
 

@@ -1,3 +1,4 @@
+/*
 @keyframes loading{
     10%{ opacity: 0;}
     20%{ opacity: 0;}
@@ -9,6 +10,7 @@ html, body{
     animation-direction: normal;
     animation-duration: 3s;
 }
+*/
 
 .hero{
     width: 100%;
@@ -495,6 +497,7 @@ nav{
 #products{
     width: 100%;
     margin: 100px auto;
+    font-family: 'ABeeZee', sans-serif;
 }
 #products header h1 {
     margin-left: 8%;
@@ -653,7 +656,7 @@ nav{
 #about p{
     width: 80%;
     margin-left: 10%;
-    color: #888;
+    color: #fff;
     font-size: 13.5px;
 }
 

@@ -156,21 +156,27 @@ $(document).ready(function() {
         });
         
         $(".label5").mouseover( function() {
-            $(".label5").append($("<p>Cabos</p>"))
+            $(".label5").append($("<p>Cabos Ópticos</p>"))
         }).mouseout( function() {
             $(".label5").find("p:last").remove();
         });
         
         $(".label6").mouseover( function() {
-            $(".label6").append($("<p>Sobre</p>"))
+            $(".label6").append($("<p>Cabos de Rede</p>"))
         }).mouseout( function() {
             $(".label6").find("p:last").remove();
         });
         
         $(".label7").mouseover( function() {
-            $(".label7").append($("<p>Contato</p>"))
+            $(".label7").append($("<p>Sobre</p>"))
         }).mouseout( function() {
             $(".label7").find("p:last").remove();
+        });
+        
+        $(".label8").mouseover( function() {
+            $(".label8").append($("<p>Contato</p>"))
+        }).mouseout( function() {
+            $(".label8").find("p:last").remove();
         });
         
     }
