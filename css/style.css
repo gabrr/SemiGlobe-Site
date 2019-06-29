@@ -142,6 +142,37 @@ p{
         top: 35px;
         z-index: 99999;
     }
+    #vertical-navigation-tip{
+/*        display: block;*/
+        position: fixed;
+        right: -4%;
+        z-index: 2;
+        top: 40px;
+    }
+    #vertical-navigation-tip p{
+        background-color: #76BFD6;
+        position: relative;
+        color: #fff;
+        width: 48%;
+        padding: 20px 25px;
+        font-size: 13px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px -1px #76BFD6;
+    }
+    #vertical-navigation-tip p::after{
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: -10px;
+        top: -5px;
+        z-index: -1;
+        border-right: 15px solid transparent;
+        border-left: 20px solid transparent;
+        border-bottom: 60px solid #76BFD6;
+        transform: rotate(67deg);
+    }
+    
     #vertical-navigation .three-dots{
         
     }

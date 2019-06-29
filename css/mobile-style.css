@@ -63,7 +63,7 @@ nav{
     display: none;
 }
 .label-inner-menu{
-    font-size: 11px !important;
+    font-size: 80% !important;
     color: #1f97bb !important;
     cursor: pointer;
 }
@@ -85,9 +85,10 @@ nav{
     display: block !important;
 }
 
-#vertical-navigation{
+#vertical-navigation, #vertical-navigation-tip{
     display: none;
 }
+
 
 /*the button the will open and close the menu with the links*/
 #nav-toggle{

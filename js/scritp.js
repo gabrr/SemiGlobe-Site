@@ -261,12 +261,25 @@ function skillsBarsAnimation(){
         chartBar8.style = "height: 25%";
         $("#phoenix-quality").css("filter", "opacity(0)");
     }
+    
+    
+    
 }
 
-
-
-
-
+/*****   show a help for the user understand that they can use the vertical menu   ******/
+var vertical;
+window.onscroll = function () {
+    vertical = window.scrollY;
+    if(WidthWindow > 768 && vertical > 1500) {
+        setTimeout(function(){ 
+            $("#vertical-navigation-tip").fadeIn(600).delay(5000); 
+        }, 5000);
+        $("#vertical-navigation-tip").mouseover( function() {
+            $("#vertical-navigation-tip").delay(2000).remove();
+        });
+    } 
+    
+}
 
 /*********   PRODUCTS  *******/
 
