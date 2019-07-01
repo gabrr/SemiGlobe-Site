@@ -62,7 +62,7 @@ p{
     
     #nav-bar .navbar-links{
         width: auto;
-        height: 50px;
+        height: auto;
         left: auto;
         right: 50%;
         transform: translateX(50%);
@@ -101,7 +101,7 @@ p{
     .navbar-links img{
         position: absolute;
         display: inline-block;
-        top: 50%;
+        top: 25px;
         transform: translateY(-50%);
         width: 10px;
         transition: 800ms;
@@ -137,12 +137,10 @@ p{
     
     
     /**********  languages ********/
-    #languages-toggles2 {
-        display: none;
-    }
     #languages-toggles{
         display: block;
         position: absolute;
+        left: auto;
         right: 4%;
         top: 45px;
     }

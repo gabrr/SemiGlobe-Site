@@ -1,4 +1,3 @@
-/*
     @keyframes loading{
         10%{ opacity: 0;}
         20%{ opacity: 0;}
@@ -10,7 +9,6 @@
         animation-direction: normal;
         animation-duration: 3000ms;
     }
-*/
 
 .hero{
     width: 100%;
@@ -88,7 +86,7 @@ nav{
 
 #languages-toggles{
     display: block;
-    position: absolute;
+    position: fixed;
     left: 4%;
     top: 25px;
     z-index: 3;
