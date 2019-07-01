@@ -27,6 +27,7 @@ $(document).ready(function(){
         if (WidthWindow < SmallDevicesW) {
             $("#nav-with-links").toggleClass("nav-slide-left");
             $("#nav-toggle").toggleClass("activated");
+            $("#languages-toggles").fadeOut(100);
         }
     });
 })
@@ -39,6 +40,7 @@ $(document).ready(function(){
    $(toggleBtn).click(function(){
        if (WidthWindow < 768) {
            $(".navbar-links").toggleClass("nav-slide-left");
+           $("#languages-toggles").fadeToggle(200);
        }else {
            $(".navbar-links").toggleClass("nav-slide-left-desk");
            $(".navbar-links li").toggle(0);

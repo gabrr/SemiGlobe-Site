@@ -137,6 +137,9 @@ p{
     
     
     /**********  languages ********/
+    #languages-toggles2 {
+        display: none;
+    }
     #languages-toggles{
         display: block;
         position: absolute;

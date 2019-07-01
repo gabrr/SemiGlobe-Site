@@ -36,15 +36,16 @@ nav{
 
 .navbar-links{
     width: 100%;
-    height: 120%;
+    height: 800px;
     margin: 0;
     left: -100%; 
     position: fixed;
-    padding: 7vh 0 0 0;
+    padding: 6% 0 0 0;
     text-align: center;
     transition: .4s;
     background-color: #fff;
     z-index: 2;
+    overflow-y: scroll;
 }
 .nav-slide-left{
     left: 0;
@@ -53,7 +54,7 @@ nav{
 .navbar-links a{
     padding: 15px;
     text-decoration:none;
-    font-size: 16px;
+    font-size: 85%;
     font-family: 'ABeeZee', sans-serif;
     color: #555;
 }
@@ -70,9 +71,7 @@ nav{
     cursor: pointer;
 }
 
-#nav-with-links .drop-menu ul li a{
-    font-size: 16px !important;
-}
+
 #nav-with-links .drop-menu ul{
     box-shadow: 0 7px 7px -8px #e0e0e0;
     width: 80%;
@@ -87,9 +86,28 @@ nav{
     display: block !important;
 }
 
+#languages-toggles{
+    display: block;
+    position: absolute;
+    left: 4%;
+    top: 25px;
+    z-index: 3;
+}
+
+#languages-toggles {
+    display: -webkit-inline-box;
+    list-style: none;
+}
+
+#languages-toggles img {
+    width: 25px;
+    margin: 0 0 11px 10%;
+}
+
 #vertical-navigation, #vertical-navigation-tip, #languages-toggles{
     display: none;
 }
+
 
 
 /*the button the will open and close the menu with the links*/
@@ -145,7 +163,7 @@ nav{
     border-radius: 20px;
     margin:  5% 12%;
     animation: 2s button-growth infinite alternate;
-    background-color: rgba(255, 255, 255, 0.48);
+    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 26px -6px #999;
     font-size: 13px;
 }
