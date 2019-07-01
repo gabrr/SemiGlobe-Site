@@ -1,14 +1,16 @@
-@keyframes loading{
-    10%{ opacity: 0;}
-    20%{ opacity: 0;}
-    30%{ opacity: 0;}
-    100%{ opacity: 1;}
-}
-html, body{
-    animation-name: loading;
-    animation-direction: normal;
-    animation-duration: 3000ms;
-}
+/*
+    @keyframes loading{
+        10%{ opacity: 0;}
+        20%{ opacity: 0;}
+        30%{ opacity: 0;}
+        100%{ opacity: 1;}
+    }
+    html, body{
+        animation-name: loading;
+        animation-direction: normal;
+        animation-duration: 3000ms;
+    }
+*/
 
 .hero{
     width: 100%;
@@ -85,7 +87,7 @@ nav{
     display: block !important;
 }
 
-#vertical-navigation, #vertical-navigation-tip{
+#vertical-navigation, #vertical-navigation-tip, #languages-toggles{
     display: none;
 }
 
@@ -121,7 +123,7 @@ nav{
 .hero-main{
     width: 100%;
     height: auto;
-    margin-top: 23vh;
+    margin-top: 16vh;
 }
 .hero-main h1{
     width: 80%;

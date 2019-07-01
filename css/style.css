@@ -64,7 +64,8 @@ p{
         width: auto;
         height: 50px;
         left: auto;
-        right: 4%;
+        right: 50%;
+        transform: translateX(50%);
         display: -webkit-inline-box;
         top: 35px;
         padding: 0;
@@ -133,6 +134,33 @@ p{
         opacity: 0;
         transition: 600ms;
     }
+    
+    
+    /**********  languages ********/
+    #languages-toggles{
+        display: block;
+        position: absolute;
+        right: 4%;
+        top: 45px;
+    }
+
+    #languages-toggles {
+        display: -webkit-inline-box;
+        list-style: none;
+    }
+    
+    #languages-toggles img {
+        width: 25px;
+        margin-left: 10px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     /*******  VERTICAL NAVIGATION   ********/
     #vertical-navigation{
