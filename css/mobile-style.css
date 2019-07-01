@@ -13,7 +13,7 @@ html, body{
 .hero{
     width: 100%;
     height: 100vh;
-    background-image: url(../img/hero.jpg);
+    background-image:  url(../img/architecture-buildings-city-842948.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -127,13 +127,14 @@ nav{
     width: 80%;
     margin-left: 10%;
     font-size: 157%;
-    color: #fff;
+    color: #555;
 }
 
 .hero-main p{
     width: 70%;
+    margin-top: 5px;
     margin-left: 10%;
-    color: #fff;
+    color: #555;
 }
 
 /**  SAIBA MAIS BOTÃO **/
