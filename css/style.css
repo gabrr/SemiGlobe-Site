@@ -38,7 +38,11 @@ p{
 
 /*the nav for DESKTOP*/
 @media screen and (min-width:768px){
-    
+    .hero{
+        background-position: bottom;
+        background-attachment: fixed;
+    }
+     
     /**  NAVIGATION BAR **/
     #nav-bar{
         width: 100%;
