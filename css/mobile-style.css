@@ -143,7 +143,8 @@ nav{
     border-radius: 20px;
     margin:  5% 12%;
     animation: 2s button-growth infinite alternate;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.48);
+    box-shadow: 0 0 26px -6px #999;
     font-size: 13px;
 }
 #scroll-down a{
