@@ -182,15 +182,7 @@ $(document).ready(function() {
     }
 });
 
-
-
-
-
-
-
-
 //That function is going to call all other ones related to scroll event
-
 $(document).ready(function(){
        $(window).scroll(function(){
            parallax();

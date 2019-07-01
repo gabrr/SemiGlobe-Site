@@ -252,16 +252,18 @@ p{
     
     /** HERO ***/
     .hero-main {
-        margin: 17.5vh auto;
-        text-align: left;
+        margin: 21vh auto;
+        text-align: center;
     }
     .hero-main h1{
         color: #444;
-        width: 50%;
-        margin: 0 0 0 8%;
         line-height: 1.1em;
         font-size: 210%;
-        text-align: left;
+    }
+    .hero-main p{
+        width: 48%;
+        margin: 15px auto;
+        font-size: 16px;
     }
     
     /**  SAIBA MAIS BOTÃO **/
