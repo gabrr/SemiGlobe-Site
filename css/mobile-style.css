@@ -130,6 +130,11 @@ nav{
     color: #fff;
 }
 
+.hero-main p{
+    width: 70%;
+    margin-left: 10%;
+    color: #fff;
+}
 
 /**  SAIBA MAIS BOTÃO **/
 #scroll-down{
