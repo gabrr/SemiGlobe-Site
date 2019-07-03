@@ -89,7 +89,7 @@ function DeskToggle() {
 /****  THE IMAGE ON THE PHOENIX ONE IS DIFFERENT FOR DESKTOP  ***/ 
 $(document).ready( function() {
         if (WidthWindow > SmallDevicesW) {
-            document.getElementById("graph-radio").src ="img/08.png";
+            document.getElementById("graph-radio").src ="../img/08.png";
         }
 });
 
@@ -134,7 +134,7 @@ $(document).ready(function() {
         
         /****  show labels ***/
         $(".label1").mouseover( function() {
-            $(".label1").append($("<p>Inicio</p>"))
+            $(".label1").append($("<p>Home</p>"))
         }).mouseout( function() {
             $(".label1").find("p:last").remove();
         });
@@ -152,31 +152,31 @@ $(document).ready(function() {
         });
         
         $(".label4").mouseover( function() {
-            $(".label4").append($("<p>Dispositivos</p>"))
+            $(".label4").append($("<p>Devices</p>"))
         }).mouseout( function() {
             $(".label4").find("p:last").remove();
         });
         
         $(".label5").mouseover( function() {
-            $(".label5").append($("<p>Cabos Ópticos</p>"))
+            $(".label5").append($("<p>Optical Cables</p>"))
         }).mouseout( function() {
             $(".label5").find("p:last").remove();
         });
         
         $(".label6").mouseover( function() {
-            $(".label6").append($("<p>Cabos de Rede</p>"))
+            $(".label6").append($("<p>Network Cables</p>"))
         }).mouseout( function() {
             $(".label6").find("p:last").remove();
         });
         
         $(".label7").mouseover( function() {
-            $(".label7").append($("<p>Sobre</p>"))
+            $(".label7").append($("<p>About</p>"))
         }).mouseout( function() {
             $(".label7").find("p:last").remove();
         });
         
         $(".label8").mouseover( function() {
-            $(".label8").append($("<p>Contato</p>"))
+            $(".label8").append($("<p>Contact</p>"))
         }).mouseout( function() {
             $(".label8").find("p:last").remove();
         });
