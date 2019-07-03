@@ -3,7 +3,7 @@ var midDevicesW = 1024;
 var SmallDevicesW = 768;
 var toggleBtn = document.getElementById('nav-toggle');
 var navWithLinks = document.getElementById('nav-with-links');
-var navBar = document.getElementById('nav-bar'); 
+var navBar = document.getElementById('nav-bar');
 
 // this code it's going to make the toogle button's effect
 function toggleAnimation(x) {
@@ -13,14 +13,14 @@ function toggleAnimation(x) {
 function showUpToggle(){
     var triggleTop = $(document).scrollTop();
     var aboutTop = document.getElementById("solutions").offsetTop;
-    
+
     if (aboutTop < triggleTop+30) {
         $(toggleBtn).css("position", "fixed");
     } else {
         $(toggleBtn).css("position", "absolute");
     }
 }
-    
+
 //The hidden menu must be must close after click in the links
 $(document).ready(function(){
     $("#nav-with-links a").click(function(){
@@ -46,7 +46,7 @@ $(document).ready(function(){
            $(".navbar-links li").toggle(0);
            $(toggleBtn).css("position", "fixed");
        }
-   }); 
+   });
 });
 
 
@@ -61,7 +61,7 @@ if(WidthWindow > 768) {
         $("#drop-button-product .drop-menu ul").css("margin", "-300% auto");
         $("#drop-button-product img").css("transform", "rotate(0deg) translateY(-50%)");
     });
-    
+
     $("#drop-button-solutions").mouseover(function() {
         $("#drop-button-solutions .drop-menu ul").css("opacity", 1);
         $("#drop-button-solutions .drop-menu ul").css("margin", "auto");
@@ -71,22 +71,32 @@ if(WidthWindow > 768) {
         $("#drop-button-solutions .drop-menu ul").css("margin", "-300% auto");
         $("#drop-button-solutions img").css("transform", "rotate(0deg) translateY(-50%)");
     });
+
+        $("#drop-button-connectors").mouseover(function() {
+        $("#drop-button-connectors .drop-menu ul").css("opacity", 1);
+        $("#drop-button-connectors .drop-menu ul").css("margin", "auto");
+        $("#drop-button-connectors img").css("transform", "rotate(-180deg) translateY(50%)");
+    }).mouseout(function() {
+        $("#drop-button-connectors .drop-menu ul").css("opacity", 0);
+        $("#drop-button-connectors .drop-menu ul").css("margin", "-300% auto");
+        $("#drop-button-connectors img").css("transform", "rotate(0deg) translateY(-50%)");
+    });
 }
 
 //the toogle on the right side in desktop version must only appear when the user scrolled to see the solutions.
 function DeskToggle() {
     var triggleTop = $(document).scrollTop();
     var solutionsTop = document.getElementById("solutions").offsetTop;
-    
+
     if (solutionsTop < triggleTop+30) {
         darkerToggle();
     } else {
-        
+
     }
 }
 
 
-/****  THE IMAGE ON THE PHOENIX ONE IS DIFFERENT FOR DESKTOP  ***/ 
+/****  THE IMAGE ON THE PHOENIX ONE IS DIFFERENT FOR DESKTOP  ***/
 $(document).ready( function() {
         if (WidthWindow > SmallDevicesW) {
             document.getElementById("graph-radio").src ="../img/08.png";
@@ -97,7 +107,7 @@ $(document).ready( function() {
 /*********  VERTICAL MENU  *********/
 $(document).ready( function() {
     $(document).scroll( function() {
-        if(WidthWindow > 768) { 
+        if(WidthWindow > 768) {
             var triggleTop = $(document).scrollTop();
             var solutionsTop = document.getElementById("solutions").offsetTop;
             if (solutionsTop < triggleTop+150 && WidthWindow > 768) {
@@ -113,74 +123,74 @@ $(document).ready( function() {
     });
 });
 
-        
+
 
 /***   Dots and its labels  *****/
 $(document).ready(function() {
-    if(WidthWindow > 768) {        
+    if(WidthWindow > 768) {
         $("#vertical-navigation").mouseover( function() {
             $(".dot1").addClass("joined-dots");
             $(".dot2").addClass("joined-dots");
             $(".dot3").addClass("joined-dots");
             $(".dots-lables").addClass("show-dots");
-            
+
         }).mouseout( function() {
             $(".dot1").removeClass("joined-dots");
             $(".dot2").removeClass("joined-dots");
             $(".dot3").removeClass("joined-dots");
             $(".dots-lables").removeClass("show-dots");
         });
-        
-        
+
+
         /****  show labels ***/
         $(".label1").mouseover( function() {
             $(".label1").append($("<p>Home</p>"))
         }).mouseout( function() {
             $(".label1").find("p:last").remove();
         });
-        
+
         $(".label2").mouseover( function() {
             $(".label2").append($("<p>Phoenix One</p>"))
         }).mouseout( function() {
             $(".label2").find("p:last").remove();
         });
-        
+
         $(".label3").mouseover( function() {
             $(".label3").append($("<p>Phoenix Quality</p>"))
         }).mouseout( function() {
             $(".label3").find("p:last").remove();
         });
-        
+
         $(".label4").mouseover( function() {
             $(".label4").append($("<p>Devices</p>"))
         }).mouseout( function() {
             $(".label4").find("p:last").remove();
         });
-        
+
         $(".label5").mouseover( function() {
             $(".label5").append($("<p>Optical Cables</p>"))
         }).mouseout( function() {
             $(".label5").find("p:last").remove();
         });
-        
+
         $(".label6").mouseover( function() {
             $(".label6").append($("<p>Network Cables</p>"))
         }).mouseout( function() {
             $(".label6").find("p:last").remove();
         });
-        
+
         $(".label7").mouseover( function() {
             $(".label7").append($("<p>About</p>"))
         }).mouseout( function() {
             $(".label7").find("p:last").remove();
         });
-        
+
         $(".label8").mouseover( function() {
             $(".label8").append($("<p>Contact</p>"))
         }).mouseout( function() {
             $(".label8").find("p:last").remove();
         });
-        
+
     }
 });
 
@@ -190,24 +200,24 @@ $(document).ready(function(){
            parallax();
            skillsBarsAnimation();
            showUpToggle();
-           
-           
+
+
            /**  DESKTOP JS **/
            goToTop();
            DeskToggle();
-       }); 
+       });
 });
 
 
-function parallax(){ 
+function parallax(){
     var hWindow = $(window).scrollTop();
     $("#phoenix-one .colorful-ball").css("left", (-32+hWindow*0.028)+"%");
     $("#phoenix-one .colorful-ball").css("top", (90+hWindow*-0.015)+"%");
-    
+
     //BALL 2
     $("#phoenix-one .colorful-ball2").css("left", (-32+hWindow*0.038)+"%");
     $("#phoenix-one .colorful-ball2").css("top", (180+hWindow*-0.05)+"%");
-    
+
     //BALL 3
     $("#phoenix-one .colorful-ball3").css("left", (-12+hWindow*0.049)+"%");
     $("#phoenix-one .colorful-ball3").css("top", (84+hWindow*-0.02)+"%");
@@ -221,7 +231,7 @@ function parallax(){
 function skillsBarsAnimation(){
     var triggleTop = $(document).scrollTop();
     var pheonixQuality = document.querySelector("#phoenix-quality").offsetTop;
-    
+
     //THE BARS TO ANIMATE
     var chartBar1 = document.getElementsByClassName("chart-bar")[0];
     var chartBar2 = document.getElementsByClassName("chart-bar")[1];
@@ -231,7 +241,7 @@ function skillsBarsAnimation(){
     var chartBar6 = document.getElementsByClassName("chart-bar")[5];
     var chartBar7 = document.getElementsByClassName("chart-bar")[6];
     var chartBar8 = document.getElementsByClassName("chart-bar")[7];
-    
+
     if(pheonixQuality < triggleTop+200){
         chartBar1.style = "height: 76%";
         chartBar2.style = "height: 64%; background-color: #ec7c7c";
@@ -243,7 +253,7 @@ function skillsBarsAnimation(){
         chartBar8.style = "height: 98%";
         //SHOW THE SECTION PHOENIX QUALITY
         $("#phoenix-quality").css("filter", "opacity(1)");
-    } 
+    }
     else if(pheonixQuality+100 > triggleTop){
         chartBar1.style = "height: 25%";
         chartBar2.style = "height: 25%";
@@ -255,9 +265,9 @@ function skillsBarsAnimation(){
         chartBar8.style = "height: 25%";
         $("#phoenix-quality").css("filter", "opacity(0)");
     }
-    
-    
-    
+
+
+
 }
 
 /*****   show a help for the user understand that they can use the vertical menu   ******/
@@ -265,14 +275,14 @@ var vertical;
 window.onscroll = function () {
     vertical = window.scrollY;
     if(WidthWindow > 768 && vertical > 1500) {
-        setTimeout(function(){ 
-            $("#vertical-navigation-tip").fadeIn(600).delay(5000); 
+        setTimeout(function(){
+            $("#vertical-navigation-tip").fadeIn(600).delay(5000);
         }, 5000);
         $("#vertical-navigation-tip").mouseover( function() {
             $("#vertical-navigation-tip").delay(2000).remove();
         });
-    } 
-    
+    }
+
 }
 
 /*********   PRODUCTS  *******/
@@ -282,19 +292,19 @@ window.onscroll = function () {
 /* BUTTON TO CHANGE THE INFO CONTENT OF EACH PRODUCT **/
 $(document).ready( function() {
     $("#hardwareButton").click( function() {
-        $("#devices .product-info-box .features-info").fadeOut(100); 
+        $("#devices .product-info-box .features-info").fadeOut(100);
         $("#devices .product-info-box .hardware-info").fadeIn(800);
-        
+
         $("#hardwareButton").css("color", "#7A8FC7");
         $("#featureButton").css("color", "#666");
     });
     $("#featureButton").click( function() {
-        $("#devices .product-info-box .hardware-info").fadeOut(0); 
+        $("#devices .product-info-box .hardware-info").fadeOut(0);
         $("#devices .product-info-box .features-info").fadeIn(800);
-        
+
         $("#hardwareButton").css("color", "#666");
         $("#featureButton").css("color", "#7A8FC7");
-   }); 
+   });
 });
 
 
@@ -302,7 +312,7 @@ $(document).ready( function() {
 /***   BUTTON TO EXPAND THE CONTENT OF THE CABLES  ****/
 $(document).ready( function() {
     $(".product-content").siblings(".show-content").fadeIn();
-       
+
 });
 
 function expandMenu(x) {
@@ -324,12 +334,12 @@ function darkerToggle(){
     var triggleTop = $(document).scrollTop();
     var aboutTop = document.getElementById("about").offsetTop;
     if (aboutTop < triggleTop+60) {
-        
+
         /** FOR DESKTOP  ***/
         if (WidthWindow > SmallDevicesW) {
             $(toggleBtn).css("background-color", "#222");
             $(".logo img").fadeOut(400);
-        } 
+        }
         /*** FOR MOBILE  ****/
         else {
             $(toggleBtn).css("background-color", "#000");
@@ -343,7 +353,7 @@ function darkerToggle(){
             $(toggleBtn).css("background-color", "#fff");
             $("#nav-toggle div").css("background-color", "#555");
             $(".logo img").fadeIn(400);
-            
+
         }
         /*** FOR MOBILE  ****/
         else {
@@ -381,10 +391,10 @@ $('a[href*="#"]')
 .click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
       location.hostname == this.hostname
-    ) 
+    )
     {
       // Figure out element to scroll to
       var target = $(this.hash);

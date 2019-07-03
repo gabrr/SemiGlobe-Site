@@ -6,8 +6,10 @@
     }
     html, body{
         animation-name: loading;
-        animation-direction: normal;
         animation-duration: 3000ms;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
     }
 
 .hero{
@@ -57,7 +59,7 @@ nav{
     color: #555;
 }
 .navbar-links li{
-    padding: 15px;
+    padding: 11px;
     list-style: none;
 }
 .navbar-links img{
@@ -528,7 +530,7 @@ nav{
     padding: 50px 0 18px 12px;
     font-size: 130%;
     width: 80%;
-    box-shadow: 0 8px 16px -11px #999;
+    box-shadow: 0 8px 16px -15px #999;
 }
 
 #products .product img{
@@ -585,7 +587,6 @@ nav{
     width: 80%;
     font-size: 13px;
     color: #777;
-    box-shadow: 0 10px 10px -10px #e0e0e0;
     padding-bottom: 75px;
     list-style: none;
 }

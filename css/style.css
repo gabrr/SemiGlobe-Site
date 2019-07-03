@@ -76,6 +76,7 @@ p{
         transform-origin: left;
         transition-timing-function: ease-in;
         transition-duration: 200ms;
+        overflow: hidden;
     }
     
     #nav-bar .navbar-links a{
@@ -101,19 +102,13 @@ p{
     .navbar-links img{
         position: absolute;
         display: inline-block;
-        top: 25px;
+        top: 21px;
         transform: translateY(-50%);
         width: 10px;
         transition: 800ms;
     }
     
-    #drop-button-solutions a{
-        font-size: 11px;
-        color: #555 !important;
-        cursor: pointer;
-    }
-    
-    #drop-button-product a{
+    #drop-button-solutions a, #drop-button-product a, #drop-button-connectors a{
         font-size: 11px;
         color: #555 !important;
         cursor: pointer;
@@ -638,6 +633,40 @@ p{
     }
     
     
+    
+    /**** connectors  *******/
+    #products #conectores-header h1{
+        margin: 0 0 0 20%;
+        padding: 50px 0 0 0;
+        box-shadow: none;
+    }
+
+    #connectors .product{
+        display: block;
+    }
+
+    #connectors .product .cable-content-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+   #products #connectors img{
+        width: 60%;
+        margin: -20px 0 0 0;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    #products #connectors .cable-item02{
+        padding-top: 50px;
+    }
+    #products #connectors .prod-details-nav ul{
+        margin: 10px 0 0 0;
+        box-shadow: none;
+    }
+    
+    #products .product-info-box .features-info, #products .product-info-box .hardware-info{
+        box-shadow: none;
+    }
     
     
     
