@@ -72,7 +72,7 @@ if(WidthWindow > 768) {
         $("#drop-button-solutions img").css("transform", "rotate(0deg) translateY(-50%)");
     });
 
-        $("#drop-button-connectors").mouseover(function() {
+    $("#drop-button-connectors").mouseover(function() {
         $("#drop-button-connectors .drop-menu ul").css("opacity", 1);
         $("#drop-button-connectors .drop-menu ul").css("margin", "auto");
         $("#drop-button-connectors img").css("transform", "rotate(-180deg) translateY(50%)");
@@ -180,15 +180,27 @@ $(document).ready(function() {
         });
 
         $(".label7").mouseover( function() {
-            $(".label7").append($("<p>About</p>"))
+            $(".label7").append($("<p>Fast Connectors</p>"))
         }).mouseout( function() {
             $(".label7").find("p:last").remove();
         });
 
         $(".label8").mouseover( function() {
-            $(".label8").append($("<p>Contact</p>"))
+            $(".label8").append($("<p>Adapters</p>"))
         }).mouseout( function() {
             $(".label8").find("p:last").remove();
+        });
+
+        $(".label9").mouseover( function() {
+            $(".label9").append($("<p>About</p>"))
+        }).mouseout( function() {
+            $(".label9").find("p:last").remove();
+        });
+
+        $(".label10").mouseover( function() {
+            $(".label10").append($("<p>Contact</p>"))
+        }).mouseout( function() {
+            $(".label10").find("p:last").remove();
         });
 
     }
