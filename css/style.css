@@ -10,14 +10,13 @@ html, body{
 }
 /**  scroll bar styling  **/
 ::-webkit-scrollbar {width: .4%;}
-::-webkit-scrollbar-track { }
 ::-webkit-scrollbar-thumb {background: #999;}
 ::-webkit-scrollbar-thumb:hover {background: #777;}
 
 /** disable scroll bar for small devices **/
-@media screen and(min-width:768px){
+@media screen and(min-width:850px){
     ::-webkit-scrollbar {width: .4%;}
-    
+
 }
 
 /**  font-family: 'ABeeZee', sans-serif;  **/
@@ -28,7 +27,7 @@ h1, h2{
     line-height: 25px;
 }
 p{
-    font-family: 'ABeeZee', sans-serif;  
+    font-family: 'ABeeZee', sans-serif;
     font-weight: lighter;
     word-spacing: 1.4px;
     line-height: 18.5px;
@@ -37,12 +36,15 @@ p{
 
 
 /*the nav for DESKTOP*/
-@media screen and (min-width:768px){
+@media screen and (min-width:850px){
     .hero{
         background-position: bottom;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
         background-attachment: fixed;
     }
-     
+
     /**  NAVIGATION BAR **/
     #nav-bar{
         width: 100%;
@@ -50,16 +52,19 @@ p{
     }
     /** WEBSITE LOGO */
     .logo{
-        margin: 25px 2%;
+        margin: 12px 2%;
+        width: 10%;
+        height: auto;
         right: auto;
         position: fixed;
         z-index: 2;
     }
     .logo img {
-        width: 230px;
+        width: 185%;
+        max-width: 230px;
         position: absolute;
     }
-    
+
     #nav-bar .navbar-links{
         width: auto;
         height: auto;
@@ -67,7 +72,7 @@ p{
         right: 50%;
         transform: translateX(50%);
         display: -webkit-inline-box;
-        top: 35px;
+        top: 26px;
         padding: 0;
         position: absolute;
         background-color: rgba(0, 0, 0, 0);
@@ -78,7 +83,7 @@ p{
         transition-duration: 200ms;
         overflow: hidden;
     }
-    
+
     #nav-bar .navbar-links a{
         font-size: 80%;
         padding: 6px;
@@ -88,13 +93,14 @@ p{
         transition-delay: 200ms;
         transition-duration: 200ms;
         position: relative;
+        padding: 4px;
     }
-    
+
     #nav-bar .navbar-links a:hover{
         color: #000 !important;
         font-weight: bolder;
     }
-    
+
     /**  DROP-MENU **/
     .drop-menu{
         position: relative;
@@ -102,12 +108,12 @@ p{
     .navbar-links img{
         position: absolute;
         display: inline-block;
-        top: 21px;
+        top: 13px;
         transform: translateY(-50%);
         width: 10px;
         transition: 800ms;
     }
-    
+
     #drop-button-solutions a, #drop-button-product a, #drop-button-connectors a{
         font-size: 11px;
         color: #555 !important;
@@ -117,10 +123,10 @@ p{
     #nav-with-links .drop-menu ul li a{
         font-size: 13px !important;
         color: #555 !important;
-        
+
     }
     #nav-with-links .drop-menu ul li{
-        padding: 10px 0 0 14px;
+        padding: 10px 0 0 0px;
     }
     #nav-with-links .drop-menu ul{
         box-shadow: none;
@@ -129,35 +135,35 @@ p{
         opacity: 0;
         transition: 600ms;
     }
-    
-    
+
+
     /**********  languages ********/
     #languages-toggles{
         display: block;
         position: absolute;
         left: auto;
         right: 4%;
-        top: 45px;
+        top: 22px;
     }
 
     #languages-toggles {
         display: -webkit-inline-box;
         list-style: none;
     }
-    
+
     #languages-toggles img {
         width: 25px;
         margin-left: 10px;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     /*******  VERTICAL NAVIGATION   ********/
     #vertical-navigation{
         position: fixed;
@@ -195,11 +201,11 @@ p{
         border-bottom: 60px solid #76BFD6;
         transform: rotate(67deg);
     }
-    
+
     #vertical-navigation .three-dots{
-        
+
     }
-    
+
    .three-dots li{
         display: inline-block;
         width: 12px;
@@ -218,7 +224,7 @@ p{
     .dot3.joined-dots {
         transform: translateX(-12.5px);
     }
-    
+
     .dots-lables{
         transition-delay: 150ms;
         transition-duration: 800ms;
@@ -228,7 +234,7 @@ p{
     .show-dots{
         display: block !important;
     }
-    
+
     #vertical-navigation .dots-lables li{
         width: 20px;
         height: 20px;
@@ -237,10 +243,10 @@ p{
         list-style: none;
         margin: 24px 0 0 15px;
     }
-    
+
     #vertical-navigation .dots-lables a{
         position: relative;
-        
+
     }
     #vertical-navigation .dots-lables a p{
         position: absolute;
@@ -253,7 +259,7 @@ p{
         width: max-content;
         text-shadow: 1px 1px 10px -5px #999;
     }
-    
+
     /*** TOOGLE MENU **/
     #nav-toggle{
         position: fixed;
@@ -267,12 +273,12 @@ p{
         z-index: 2;
         display: none;
     }
-    
+
     #nav-toggle:hover{
         transform: scale(1.05) rotate(180deg);
         box-shadow: 0px 0px 20px #999;
     }
-    
+
     /** HERO ***/
     .hero-main {
         margin: 21vh auto;
@@ -289,7 +295,7 @@ p{
         font-size: 16px;
         color: #555;
     }
-    
+
     /**  SAIBA MAIS BOTÃO **/
     #scroll-down{
         margin: 2% 8%;
@@ -298,11 +304,11 @@ p{
         box-shadow: 0 0 26px -6px #999;
     }
     #scroll-down a{
-        text-decoration: none;   
+        text-decoration: none;
         color: #666;
         padding: 20px;
     }
-    
+
     /***  SOLUTIONS  ***/
     #solutions header h2{
         font-size: 14px;
@@ -321,7 +327,7 @@ p{
         margin: 60px 0 30px 18%;
         width: 64%;
     }
-    
+
     /**  PHOENIX ONE ***/
     #phoenix-one{
         width: 100%;
@@ -338,8 +344,8 @@ p{
         margin-top: 10px;
         margin-left: 20%;
     }
-    
-    
+
+
     /*** PHOENIX QUALITY **/
     #phoenix-quality{
         width: 100%;
@@ -364,7 +370,7 @@ p{
         font-size: 77%;
         margin: 10px 0 0 20%;
     }
-    
+
     #phoenix-quality .title{
         margin-left: 20%;
     }
@@ -373,10 +379,10 @@ p{
         width: 30%;
         margin: 115px 0 10px 25%;
     }
-    
+
     /**  ANIMATED CHART FOR PHEONIX QUALUTY  ***/
     #chart{
-        width: 72%; 
+        width: 72%;
         height: 400px;
         margin: auto;
         display: grid;
@@ -526,7 +532,7 @@ p{
         font-family: 'ABeeZee', sans-serif;
         font-weight: bolder;
     }
-    
+
     .average-card{
         width: 22%;
         height: 80px;
@@ -564,9 +570,9 @@ p{
         top: 25%;
         background-color: #f7f7f7;
     }
-    
-    
-    
+
+
+
     /*********  PRODUCTS   ************/
     #devices{
         padding-top: 100px;
@@ -593,12 +599,12 @@ p{
         grid-row: 1;
         margin-top: 100px
     }
-    
+
     #products .product p, #products .product h2, #products .mail-button, #products .prod-details-nav ul, #products .product-info-box .hardware-info, #products .product-info-box .features-info{
         margin-left: 0;
     }
-    
-    
+
+
     /**** cables  *******/
     #cables header h1:nth-child(1){
         margin-left: 20%;
@@ -609,31 +615,31 @@ p{
     #cables .product{
         display: block;
     }
-    
+
     #cables .product .cable-content-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
+
    #products #cables img{
         width: 60%;
         margin: -50px 0 0 0;
         grid-column-start: 2;
         grid-row-start: 1;
     }
-    
+
     .cable-item01{
         margin-top: 20px;
         grid-column-start: 1;
         grid-row-start: 1;
     }
-    
+
     products .prod-details-nav ul{
         margin: 0 0 0 0;
     }
-    
-    
-    
+
+
+
     /**** connectors  *******/
     #products #conectores-header h1{
         margin: 0 0 0 20%;
@@ -663,13 +669,13 @@ p{
         margin: 10px 0 0 0;
         box-shadow: none;
     }
-    
+
     #products .product-info-box .features-info, #products .product-info-box .hardware-info{
         box-shadow: none;
     }
-    
-    
-    
+
+
+
     /***  ABOUT ***/
     #about{
         padding-top: 0;
@@ -689,8 +695,8 @@ p{
         font-size: 80%;
         font-family: 'ABeeZee', sans-serif;
     }
-    
-    
+
+
     /** CONTATO **/
     #contact{
         width: 100%;
@@ -745,7 +751,7 @@ p{
         border-radius: 50%;
         border: 2px solid #fff;
     }
-    
+
     /**  CREDITS **/
     #credits{
         width: 90%;

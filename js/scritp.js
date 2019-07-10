@@ -1,6 +1,6 @@
 var WidthWindow = $(document).innerWidth();
 var midDevicesW = 1024;
-var SmallDevicesW = 768;
+var SmallDevicesW = 850;
 var toggleBtn = document.getElementById('nav-toggle');
 var navWithLinks = document.getElementById('nav-with-links');
 var navBar = document.getElementById('nav-bar');
@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
    $(toggleBtn).click(function(){
-       if (WidthWindow < 768) {
+       if (WidthWindow < 850) {
            $(".navbar-links").toggleClass("nav-slide-left");
            $("#languages-toggles").fadeToggle(200);
        }else {
@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 
 /****  WHEN HOVER THE LINKS, SHOW THE DROP DOWN MENU ****/
-if(WidthWindow > 768) {
+if(WidthWindow > 850) {
     $("#drop-button-product").mouseover(function() {
         $("#drop-button-product .drop-menu ul").css("opacity", 1);
         $("#drop-button-product .drop-menu ul").css("margin", "auto");
@@ -107,17 +107,17 @@ $(document).ready( function() {
 /*********  VERTICAL MENU  *********/
 $(document).ready( function() {
     $(document).scroll( function() {
-        if(WidthWindow > 768) {
+        if(WidthWindow > 850) {
             var triggleTop = $(document).scrollTop();
             var solutionsTop = document.getElementById("solutions").offsetTop;
-            if (solutionsTop < triggleTop+150 && WidthWindow > 768) {
+            if (solutionsTop < triggleTop+150 && WidthWindow > 850) {
                 $("#vertical-navigation").fadeIn(800);
                 $(".logo").css("position", "fixed");
-                $(".logo img").css("width", "150px");
+                $(".logo img").css("width", "130%");
             } else {
                 $("#vertical-navigation").fadeOut(200);
                 $(".logo").css("position", "absolute");
-                $(".logo img").css("width", "230px");
+                $(".logo img").css("width", "185%");
             }
         }
     });
@@ -127,7 +127,7 @@ $(document).ready( function() {
 
 /***   Dots and its labels  *****/
 $(document).ready(function() {
-    if(WidthWindow > 768) {
+    if(WidthWindow > 850) {
         $("#vertical-navigation").mouseover( function() {
             $(".dot1").addClass("joined-dots");
             $(".dot2").addClass("joined-dots");
@@ -286,7 +286,7 @@ function skillsBarsAnimation(){
 var vertical;
 window.onscroll = function () {
     vertical = window.scrollY;
-    if(WidthWindow > 768 && vertical > 1500) {
+    if(WidthWindow > 850 && vertical > 1500) {
         setTimeout(function(){
             $("#vertical-navigation-tip").fadeIn(600).delay(5000);
         }, 5000);

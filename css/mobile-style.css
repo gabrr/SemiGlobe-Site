@@ -38,7 +38,7 @@ nav{
     width: 100%;
     height: 800px;
     margin: 0;
-    left: -100%; 
+    left: -100%;
     position: fixed;
     padding: 6% 0 0 0;
     text-align: center;
@@ -168,7 +168,7 @@ nav{
     font-size: 13px;
 }
 #scroll-down a{
-    text-decoration: none;   
+    text-decoration: none;
     color: #222;
     padding: 20px;
 }
@@ -340,7 +340,7 @@ nav{
 
  /**  ANIMATED CHART FOR PHEONIX QUALUTY  ***/
 #chart{
-    width: 100%; 
+    width: 100%;
     height: 400px;
     margin: auto;
     display: grid;
