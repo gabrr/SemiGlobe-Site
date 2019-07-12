@@ -43,6 +43,8 @@ p{
         -moz-background-attachment: fixed;
         -o-background-attachment: fixed;
         background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     /**  NAVIGATION BAR **/
