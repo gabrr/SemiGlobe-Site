@@ -126,6 +126,10 @@ p{
         margin-right: -7%;
         margin-left: -3%;
     }
+    
+    #drop-button-solutions, #drop-button-product{
+        height: min-content;
+    }
 
     #nav-with-links .drop-menu ul li a{
         font-size: 92% !important;
@@ -290,6 +294,8 @@ p{
     .hero-main {
         margin: 21vh auto;
         text-align: center;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(.31, .1, .27, 1.34);
     }
     .hero-main h1{
         color: #444;
@@ -319,7 +325,7 @@ p{
 
     /***  SOLUTIONS  ***/
     #solutions header h2{
-        font-size: 14px;
+        font-size: 110%;
         margin-left: 20%;
         margin-top: 30px;;
         padding-top: 50px;
@@ -327,7 +333,7 @@ p{
     }
 
     #solutions header h1{
-        font-size: 140%;
+        font-size: 150%;
         width: 60%;
         margin-left: 20%;
     }
@@ -342,13 +348,13 @@ p{
     }
     #phoenix-one h1{
         width: 60%;
-        font-size: 100%;
+        font-size: 120%;
         margin-left: 20%;
     }
 
     #phoenix-one p{
         width: 60%;
-        font-size: 77%;
+        font-size: 90%;
         margin-top: 10px;
         margin-left: 20%;
     }
@@ -369,13 +375,13 @@ p{
     }
     #highlights2 h1{
         width: 60%;
-        font-size: 17px;
+        font-size: 120%;
         margin-left: 20%;
     }
 
     #phoenix-quality p{
         width: 60%;
-        font-size: 77%;
+        font-size: 90%;
         margin: 10px 0 0 20%;
     }
 
@@ -391,7 +397,7 @@ p{
     /**  ANIMATED CHART FOR PHEONIX QUALUTY  ***/
     #chart{
         width: 72%;
-        height: 400px;
+        height: 500px;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -402,7 +408,7 @@ p{
         margin: 80px 0 0 15%;
         background-color: #fff;
         width: 100%;
-        height: 300px;
+        height: 40vh;
         border-radius: 20px;
         position: relative;
         grid-column-start: 1;
@@ -589,7 +595,17 @@ p{
         padding: 50px 0 0 0;
         margin-left: 20%;
         box-shadow: none;
+        font-size: 160%;
     }
+    
+    #products .product h2{
+        font-size: 110%;
+    }
+    
+    #products .product p{
+        font-size: 90%;
+    }
+    
     .product{
         width: 60%;
         margin-left: 20%;

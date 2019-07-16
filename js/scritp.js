@@ -56,31 +56,26 @@ if(WidthWindow > 850) {
         $("#drop-button-product .drop-menu ul").css("opacity", 1);
         $("#drop-button-product .drop-menu ul").css("margin", "auto");
         $("#drop-button-product img").css("transform", "rotate(-180deg) translateY(50%)");
+        $(".hero-main").css("margin-top", "33vh");
     }).mouseout(function() {
         $("#drop-button-product .drop-menu ul").css("opacity", 0);
         $("#drop-button-product .drop-menu ul").css("margin", "-300% auto");
         $("#drop-button-product img").css("transform", "rotate(0deg) translateY(-50%)");
+        $(".hero-main").css("margin-top", "21vh");
     });
 
     $("#drop-button-solutions").mouseover(function() {
         $("#drop-button-solutions .drop-menu ul").css("opacity", 1);
         $("#drop-button-solutions .drop-menu ul").css("margin", "auto");
         $("#drop-button-solutions img").css("transform", "rotate(-180deg) translateY(50%)");
+        $(".hero-main").css("margin-top", "33vh");
     }).mouseout(function() {
         $("#drop-button-solutions .drop-menu ul").css("opacity", 0);
         $("#drop-button-solutions .drop-menu ul").css("margin", "-300% auto");
         $("#drop-button-solutions img").css("transform", "rotate(0deg) translateY(-50%)");
+        $(".hero-main").css("margin-top", "21vh");
     });
 
-    $("#drop-button-connectors").mouseover(function() {
-        $("#drop-button-connectors .drop-menu ul").css("opacity", 1);
-        $("#drop-button-connectors .drop-menu ul").css("margin", "auto");
-        $("#drop-button-connectors img").css("transform", "rotate(-180deg) translateY(50%)");
-    }).mouseout(function() {
-        $("#drop-button-connectors .drop-menu ul").css("opacity", 0);
-        $("#drop-button-connectors .drop-menu ul").css("margin", "-300% auto");
-        $("#drop-button-connectors img").css("transform", "rotate(0deg) translateY(-50%)");
-    });
 }
 
 //the toogle on the right side in desktop version must only appear when the user scrolled to see the solutions.
