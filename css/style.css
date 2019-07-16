@@ -87,7 +87,7 @@ p{
     }
 
     #nav-bar .navbar-links a{
-        font-size: 80%;
+        font-size: 92%;
         padding: 6px;
         transition-duration: 300ms;
     }
@@ -117,13 +117,18 @@ p{
     }
 
     #drop-button-solutions a, #drop-button-product a, #drop-button-connectors a{
-        font-size: 11px;
+        font-size: 92% !important;
         color: #555 !important;
         cursor: pointer;
     }
+    
+    #drop-button-solutions{
+        margin-right: -7%;
+        margin-left: -3%;
+    }
 
     #nav-with-links .drop-menu ul li a{
-        font-size: 13px !important;
+        font-size: 92% !important;
         color: #555 !important;
 
     }
@@ -289,12 +294,13 @@ p{
     .hero-main h1{
         color: #444;
         line-height: 1.1em;
-        font-size: 210%;
+        font-size: 230%;
     }
     .hero-main p{
-        width: 48%;
+        width: 47%;
         margin: 15px auto;
-        font-size: 16px;
+        line-height: 150%;
+        font-size: 125%;
         color: #555;
     }
 
