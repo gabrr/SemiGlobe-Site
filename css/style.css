@@ -38,11 +38,10 @@ p{
 /*the nav for DESKTOP*/
 @media screen and (min-width:850px){
     .hero{
-        background-position: bottom;
+        background-position: bottom bottom;
         -webkit-background-attachment: fixed;
         -moz-background-attachment: fixed;
         -o-background-attachment: fixed;
-        background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 100vh;
