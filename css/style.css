@@ -45,6 +45,7 @@ p{
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
+        min-height: 100vh;
     }
 
     /**  NAVIGATION BAR **/
@@ -185,7 +186,7 @@ p{
     #vertical-navigation-tip{
 /*        display: block;*/
         position: fixed;
-        right: -4%;
+        right: -3%;
         z-index: 2;
         top: 40px;
     }
