@@ -261,13 +261,13 @@ p{
     }
     #vertical-navigation .dots-lables a p{
         position: absolute;
-        top: -18px;
         right: 0px;
         color: #888;
         font-size: 13px;
         font-family: 'ABeeZee', sans-serif;
         font-weight: lighter;
         width: max-content;
+        transform: translateY(-100%);
         text-shadow: 1px 1px 10px -5px #999;
     }
 

@@ -486,6 +486,7 @@ nav{
 }
 #chart .goal-card h3{
     text-align: -webkit-center;
+    text-align: center;
     font-size: 17px;
     color:  #004c0a;
     font-family: 'ABeeZee', sans-serif;
@@ -513,6 +514,7 @@ nav{
 }
 #chart .average-card h3{
     text-align: -webkit-center;
+    text-align: center;
     font-size: 17px;
     color: #630303;
     font-family: 'ABeeZee', sans-serif;

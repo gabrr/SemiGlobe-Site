@@ -134,7 +134,7 @@ var vMMultiLang = {
 var currentPathPage = window.location.pathname;
 currentPathPage = currentPathPage.split('/', 2);
 currentLang = currentPathPage[1]; 
-if (currentLang === "") {
+if (currentLang === "" || currentLang === "index.html") {
     currentLang = "pt";
 }
 
@@ -163,7 +163,7 @@ $(document).ready(function() {
         });
 
         $(".label2").mouseover( function() {
-            $(".label2").append($("<p>"+vMMultiLang[currentLang][2]+"</p>"))
+            $(".label2").append("<p>"+vMMultiLang[currentLang][2]+"</p>")
         }).mouseout( function() {
             $(".label2").find("p:last").remove();
         });
