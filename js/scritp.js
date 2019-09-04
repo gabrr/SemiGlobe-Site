@@ -127,7 +127,7 @@ var vMMultiLang = {
         1: 'Home', 2: 'Phoenix One', 3:'Phoenix Quality', 4:'Devices', 5:'Optical Cables', 6:'Network Cables', 7:'Fast Connectors', 8:'Adapters', 9:'About', 10:'Contact'
     },
     'es' : {
-        1: 'Inicio', 2: 'Phoenix One', 3:'Phoenix Quality', 4:'Dispositvos', 5:'Cables Optico', 6:'Cables de red', 7:'Conectores', 8:'Adaptadores', 9:'Acerca', 10:'Contacto'
+        1: 'Inicio', 2: 'Phoenix One', 3:'Phoenix Quality', 4:'Dispositvos', 5:'Cables Ópticos', 6:'Cables de red', 7:'Conectores', 8:'Adaptadores', 9:'Acerca', 10:'Contacto'
     }
 };
 
