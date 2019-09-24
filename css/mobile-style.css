@@ -10,6 +10,7 @@
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         animation-timing-function: ease-out;
+        z-index: 9999999;
     }
 
 .hero{
@@ -19,9 +20,6 @@
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-}
-.content{
-    z-index: 9999;
 }
 
 @media screen and (max-width: 767px) {
