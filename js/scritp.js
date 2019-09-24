@@ -56,26 +56,31 @@ if(WidthWindow > 850) {
         $("#drop-button-product .drop-menu ul").css("opacity", 1);
         $("#drop-button-product .drop-menu ul").css("margin", "auto");
         $("#drop-button-product img").css("transform", "rotate(-180deg) translateY(50%)");
-        $(".hero-main").css("margin-top", "33vh");
     }).mouseout(function() {
         $("#drop-button-product .drop-menu ul").css("opacity", 0);
         $("#drop-button-product .drop-menu ul").css("margin", "-300% auto");
         $("#drop-button-product img").css("transform", "rotate(0deg) translateY(-50%)");
-        $(".hero-main").css("margin-top", "21vh");
     });
 
     $("#drop-button-solutions").mouseover(function() {
         $("#drop-button-solutions .drop-menu ul").css("opacity", 1);
         $("#drop-button-solutions .drop-menu ul").css("margin", "auto");
         $("#drop-button-solutions img").css("transform", "rotate(-180deg) translateY(50%)");
-        $(".hero-main").css("margin-top", "33vh");
     }).mouseout(function() {
         $("#drop-button-solutions .drop-menu ul").css("opacity", 0);
         $("#drop-button-solutions .drop-menu ul").css("margin", "-300% auto");
         $("#drop-button-solutions img").css("transform", "rotate(0deg) translateY(-50%)");
-        $(".hero-main").css("margin-top", "21vh");
     });
 
+    $("#drop-button-connectors").mouseover(function() {
+        $("#drop-button-connectors .drop-menu ul").css("opacity", 1);
+        $("#drop-button-connectors .drop-menu ul").css("margin", "auto");
+        $("#drop-button-connectors img").css("transform", "rotate(-180deg) translateY(50%)");
+    }).mouseout(function() {
+        $("#drop-button-connectors .drop-menu ul").css("opacity", 0);
+        $("#drop-button-connectors .drop-menu ul").css("margin", "-300% auto");
+        $("#drop-button-connectors img").css("transform", "rotate(0deg) translateY(-50%)");
+    });
 }
 
 //the toogle on the right side in desktop version must only appear when the user scrolled to see the solutions.
@@ -119,24 +124,6 @@ $(document).ready( function() {
 });
 
 
-var vMMultiLang = {
-    'pt' : {
-        1: 'Início', 2: 'Phoenix One', 3:'Phoenix Quality', 4:'Dispositivos', 5:'Cabos Ópticos', 6:'Cabos de Rede', 7:'Conectores', 8:'Adaptadores', 9:'Sobre', 10:'Contato'
-    }, 
-    'en' : {
-        1: 'Home', 2: 'Phoenix One', 3:'Phoenix Quality', 4:'Devices', 5:'Optical Cables', 6:'Network Cables', 7:'Fast Connectors', 8:'Adapters', 9:'About', 10:'Contact'
-    },
-    'es' : {
-        1: 'Inicio', 2: 'Phoenix One', 3:'Phoenix Quality', 4:'Dispositvos', 5:'Cables Ópticos', 6:'Cables de red', 7:'Conectores', 8:'Adaptadores', 9:'Acerca', 10:'Contacto'
-    }
-};
-
-var currentPathPage = window.location.pathname;
-currentPathPage = currentPathPage.split('/', 2);
-currentLang = currentPathPage[1]; 
-if (currentLang === "" || currentLang === "index.html") {
-    currentLang = "pt";
-}
 
 /***   Dots and its labels  *****/
 $(document).ready(function() {
@@ -157,61 +144,61 @@ $(document).ready(function() {
 
         /****  show labels ***/
         $(".label1").mouseover( function() {
-            $(".label1").append($("<p>"+vMMultiLang[currentLang][1]+"</p>"))
+            $(".label1").append($("<p>Home</p>"))
         }).mouseout( function() {
             $(".label1").find("p:last").remove();
         });
 
         $(".label2").mouseover( function() {
-            $(".label2").append("<p>"+vMMultiLang[currentLang][2]+"</p>")
+            $(".label2").append($("<p>Phoenix One</p>"))
         }).mouseout( function() {
             $(".label2").find("p:last").remove();
         });
 
         $(".label3").mouseover( function() {
-            $(".label3").append($("<p>"+vMMultiLang[currentLang][3]+"</p>"))
+            $(".label3").append($("<p>Phoenix Quality</p>"))
         }).mouseout( function() {
             $(".label3").find("p:last").remove();
         });
 
         $(".label4").mouseover( function() {
-            $(".label4").append($("<p>"+vMMultiLang[currentLang][4]+"</p>"))
+            $(".label4").append($("<p>Devices</p>"))
         }).mouseout( function() {
             $(".label4").find("p:last").remove();
         });
 
         $(".label5").mouseover( function() {
-            $(".label5").append($("<p>"+vMMultiLang[currentLang][5]+"</p>"))
+            $(".label5").append($("<p>Optical Cables</p>"))
         }).mouseout( function() {
             $(".label5").find("p:last").remove();
         });
 
         $(".label6").mouseover( function() {
-            $(".label6").append($("<p>"+vMMultiLang[currentLang][6]+"</p>"))
+            $(".label6").append($("<p>Network Cables</p>"))
         }).mouseout( function() {
             $(".label6").find("p:last").remove();
         });
 
         $(".label7").mouseover( function() {
-            $(".label7").append($("<p>"+vMMultiLang[currentLang][7]+"</p>"))
+            $(".label7").append($("<p>Fast Connectors</p>"))
         }).mouseout( function() {
             $(".label7").find("p:last").remove();
         });
 
         $(".label8").mouseover( function() {
-            $(".label8").append($("<p>"+vMMultiLang[currentLang][8]+"</p>"))
+            $(".label8").append($("<p>Adapters</p>"))
         }).mouseout( function() {
             $(".label8").find("p:last").remove();
         });
 
         $(".label9").mouseover( function() {
-            $(".label9").append($("<p>"+vMMultiLang[currentLang][9]+"</p>"))
+            $(".label9").append($("<p>About</p>"))
         }).mouseout( function() {
             $(".label9").find("p:last").remove();
         });
 
         $(".label10").mouseover( function() {
-            $(".label10").append($("<p>"+vMMultiLang[currentLang][10]+"</p>"))
+            $(".label10").append($("<p>Contact</p>"))
         }).mouseout( function() {
             $(".label10").find("p:last").remove();
         });
