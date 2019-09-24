@@ -20,6 +20,9 @@
     background-position: top;
     background-repeat: no-repeat;
 }
+.content{
+    z-index: 9999;
+}
 
 @media screen and (max-width: 767px) {
     .desktop-image{
