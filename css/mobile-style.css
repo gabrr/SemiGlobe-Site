@@ -598,11 +598,20 @@ nav{
     padding: 60px 0 0 0;
 }
 #products #cables img{
-    width: 80%;
-    margin: 5px 0 0 10%;
+    width: 53%;
+    margin: 20px 0 0 10%;
 }
-
-
+#products #cables .cable-content-grid div{
+    position: relative;
+}
+.anatel-certification{
+    position: absolute;
+    bottom: -10%;
+    right: 9%;
+    max-width: 120px;
+    width: 80%;
+    min-width: 0px;
+}
 
 /*******  BUTTON TO SHOW THE PRODUCT CONTENT ******/
 .product{

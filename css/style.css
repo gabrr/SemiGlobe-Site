@@ -662,7 +662,15 @@ p{
         margin: 0 0 0 0;
     }
 
-
+    /*  adding ANATEL CERTIFICATION LOGO  */
+    .anatel-certification{
+        position: absolute;
+        bottom: -10%;
+        right: 10%;
+        max-width: 140px;
+        width: 100%;
+        min-width: 0px;
+    }
 
     /**** connectors  *******/
     #products #conectores-header h1{
